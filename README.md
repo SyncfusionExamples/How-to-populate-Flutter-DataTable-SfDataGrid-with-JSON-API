@@ -148,6 +148,5 @@ class _JsonDataGridSource extends DataGridSource {
 }
 ```
 
-<img alt="Load data from JSON(Online) to the flutter DataTable "  src="https://www.syncfusion.com/uploads/user/kb/flut/flut-4727/flut-4727_img1.gif" width="300" height="400" />
-
 **[View document in Syncfusion Flutter Knowledge base](https://www.syncfusion.com/kb/12646/how-to-populate-flutter-datatable-sfdatagrid-with-json-api)**
+...
