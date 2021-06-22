@@ -27,10 +27,10 @@ class JsonDataGrid extends StatefulWidget {
 }
 
 class _JsonDataGridState extends State<JsonDataGrid> {
-  _JsonDataGridSource jsonDataGridSource;
+  late _JsonDataGridSource jsonDataGridSource;
   List<_Product> productlist = [];
 
-  Future<void> generateProductList() async {
+  Future generateProductList() async {
     var response = await http.get(Uri.parse(
         'https://ej2services.syncfusion.com/production/web-services/api/Orders'));
     var list = json.decode(response.body).cast<Map<String, dynamic>>();
@@ -164,17 +164,17 @@ class _Product {
       this.shipCity,
       this.shipPostelCode,
       this.shipCountry});
-  final int orderID;
-  final String customerID;
-  final int employeeID;
-  final DateTime orderDate;
-  final DateTime shippedDate;
-  final double freight;
-  final String shipName;
-  final String shipAddress;
-  final String shipCity;
-  final int shipPostelCode;
-  final String shipCountry;
+   int? orderID;
+   String? customerID;
+   int? employeeID;
+   DateTime? orderDate;
+   DateTime? shippedDate;
+   double? freight;
+   String? shipName;
+   String? shipAddress;
+   String? shipCity;
+   int? shipPostelCode;
+   String? shipCountry;
 }
 
 class _JsonDataGridSource extends DataGridSource {
