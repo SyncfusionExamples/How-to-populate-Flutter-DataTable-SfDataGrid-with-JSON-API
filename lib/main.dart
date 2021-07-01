@@ -43,7 +43,7 @@ class _JsonDataGridState extends State<JsonDataGrid> {
   List<GridColumn> getColumns() {
     List<GridColumn> columns;
     columns = ([
-      GridTextColumn(
+      GridColumn(
         columnName: 'orderID',
         width: 70,
         label: Container(
@@ -56,7 +56,7 @@ class _JsonDataGridState extends State<JsonDataGrid> {
           ),
         ),
       ),
-      GridTextColumn(
+      GridColumn(
         columnName: 'customerID',
         width: 95,
         label: Container(
@@ -69,7 +69,7 @@ class _JsonDataGridState extends State<JsonDataGrid> {
           ),
         ),
       ),
-      GridTextColumn(
+      GridColumn(
         columnName: 'employeeID',
         width: 95,
         label: Container(
@@ -82,7 +82,7 @@ class _JsonDataGridState extends State<JsonDataGrid> {
           ),
         ),
       ),
-      GridTextColumn(
+      GridColumn(
         columnName: 'orderDate',
         width: 100,
         label: Container(
@@ -95,7 +95,7 @@ class _JsonDataGridState extends State<JsonDataGrid> {
           ),
         ),
       ),
-      GridTextColumn(
+      GridColumn(
         columnName: 'freight',
         width: 70,
         label: Container(
@@ -164,17 +164,17 @@ class _Product {
       this.shipCity,
       this.shipPostelCode,
       this.shipCountry});
-   int? orderID;
-   String? customerID;
-   int? employeeID;
-   DateTime? orderDate;
-   DateTime? shippedDate;
-   double? freight;
-   String? shipName;
-   String? shipAddress;
-   String? shipCity;
-   int? shipPostelCode;
-   String? shipCountry;
+  int? orderID;
+  String? customerID;
+  int? employeeID;
+  DateTime? orderDate;
+  DateTime? shippedDate;
+  double? freight;
+  String? shipName;
+  String? shipAddress;
+  String? shipCity;
+  int? shipPostelCode;
+  String? shipCountry;
 }
 
 class _JsonDataGridSource extends DataGridSource {
