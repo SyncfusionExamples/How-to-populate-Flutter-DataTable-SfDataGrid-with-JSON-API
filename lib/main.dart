@@ -218,7 +218,7 @@ class _JsonDataGridSource extends DataGridSource {
         alignment: Alignment.centerLeft,
         padding: EdgeInsets.all(8.0),
         child: Text(
-          row.getCells()[1].value,
+          row.getCells()[1].value.toString(),
           overflow: TextOverflow.ellipsis,
         ),
       ),
